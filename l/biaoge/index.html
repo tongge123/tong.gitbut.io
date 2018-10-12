@@ -46,9 +46,23 @@
     	.t3{background: papayawhip;}
     	.t4{background: deepskyblue;}
     	.t5{background: papayawhip;}
+        .tt2{background: yellow;}
     </style>
     <script>
-    	$('#t2')
+        $(document).ready(function(){
+	$("#t2").click(function(){
+		$(".t2").toggleClass("tt2");
+	});
+    $("#t3").click(function(){
+		$(".t3").toggleClass("tt2");
+	});
+    $("#t4").click(function(){
+		$(".t4").toggleClass("tt2");
+	});
+    $("#t5").click(function(){
+		$(".t5").toggleClass("tt2");
+	});
+});
     </script>
 </body>
 </html>
